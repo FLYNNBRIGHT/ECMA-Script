@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: rgb(33, 34, 31);
+    display: grid;
+}
+
+header {
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header button {
+    background-color: aliceblue;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bolder;
+    border: transparent;
+}
+
+header p {
+    color: #9d9fa1;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+    font-weight: bolder;
+}
+
+.cent {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    &:after,
+    &:before {
+        width: auto;
+        height: 2px;
+        background-color: aliceblue;
+        content: "";
+    }
+}
+
+.quest {
+    background-color: aliceblue;
+    width: 150px;
+    display: grid;
+    height: 100px;
+}
+
+.quest p {
+    font-size: 50px;
+    font-weight: bolder;
+    margin: auto;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+input {
+    font-size: 50px;
+    color: #f0f8ff;
+    text-align: center;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2rem;
+}
+
+
+input {
+    width: 15rem;
+    height: 10rem;
+    border: solid 5px #f0f8ff;
+    background-color: transparent;
+}
+
+.check button {
+    background-color: #9d9fa1;
+    width: 7rem;
+    height: 3rem;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: auto;
+    border: transparent;
+    padding-top: 0.5rem;
+}
+
+.check button:hover {
+    cursor: pointer;
+    background-color: #e4ebf1
+}
+
+.again:hover {
+    cursor: pointer;
+    background-color: #9d9fa1;
+}
+
+.scoreSect p {
+    color: #9d9fa1;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#guessText {
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 574px) {
+    .game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1.5rem;
+        gap: 1rem;
+    }
+
+    header button {
+        background-color: aliceblue;
+        width: 70px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 0.8rem;
+    }
+
+    .quest {
+        width: 100px;
+        display: grid;
+        height: 75px;
+    }
+
+    .quest p {
+        font-size: 35px;
+    }
+
+    input {
+        width: 10rem;
+        height: 8rem;
+        border: solid 5px #f0f8ff;
+        background-color: transparent;
+    }
+
+    .check button {
+        background-color: #9d9fa1;
+        width: 5rem;
+        height: 2rem;
+        font-size: 20px;
+    }
+}
